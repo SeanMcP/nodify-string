@@ -1,9 +1,3 @@
-const htmlString = `
-<h1 id="work">Work</h1>
-<h2 id="work-tagline">Work tagline</h2>
-<p>Some body text.</p>
-`
-
 export default nodifyString = (htmlString) => {
     const byLine = htmlString.split('\n')
 
