@@ -4,7 +4,7 @@ const htmlString = `
 <p>Some body text.</p>
 `
 
-const nodifyString = (htmlString) => {
+export default nodifyString = (htmlString) => {
     const byLine = htmlString.split('\n')
 
     return byLine.reduce((acc, line) => {
