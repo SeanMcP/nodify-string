@@ -1,4 +1,15 @@
 {
     "name": "nodify-string",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "description": "A utility for converting HTML strings into DOM nodes without innerHTML.",
+    "license": "MIT",
+    "repository": "seanmcp/nodify-string",
+    "main": "src/index.js",
+    "keywords": [
+        "nodify",
+        "string",
+        "html",
+        "marked",
+        "innerHTML"
+    ]
 }

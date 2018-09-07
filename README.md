@@ -1,3 +1,3 @@
 # nodify-string
 
-Description
+A utility for converting HTML strings into DOM nodes without innerHTML 
