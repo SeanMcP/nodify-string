@@ -1,21 +1,22 @@
-export default nodifyString = (htmlString) => {
-    const byLine = htmlString.split('\n')
+function nodifyString(htmlString, settings) {
+    var outputAsArray = false
+    if (settings && settings.hasOwnProperty('array')) {
+        outputAsArray = settings.array
+    }
 
-    return byLine.reduce((acc, line) => {
-        if (line.length) {
-            const tagMatch = line.match(/\<(\w+)(?:\s*|\>)?/g)[0]
-            const tag = tagMatch.slice(1, tagMatch.length - 1)
-    
-            const textMatch = line.match(/\>(.*?)\</g)[0]
-            const text = textMatch.slice(1, textMatch.length - 1)
-    
-            const element = document.createElement(tag)
-            const textNode = document.createTextNode(text)
-            element.appendChild(textNode)
+    var parser = new DOMParser()
+    var document = parser.parseFromString(htmlString, 'text/html')
+    var nodes = document.childNodes[0].childNodes[1].childNodes
 
-            acc.push(element)
-        }
+    if (outputAsArray) {
+        nodes = Array.prototype.slice.call(nodes);
+    }
 
-        return acc
-    }, [])
+    return nodes
+}
+
+try {
+    module.exports = nodifyString
+} catch {
+    console.log('nodify-string imported')
 }
