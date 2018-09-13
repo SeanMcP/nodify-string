@@ -17,6 +17,6 @@ function nodifyString(htmlString, settings) {
 
 try {
     module.exports = nodifyString
-} catch {
+} catch (error) {
     console.log('nodify-string imported')
 }
