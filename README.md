@@ -50,7 +50,7 @@ Add `nodify-string` to your list of scripts at the bottom of your HTML document.
 
 ### Use with Marked.js
 
-Import both `nodify-string` and Marked.js. Then go through the same process with the output from the `marked` function.
+Add both `nodify-string` and Marked.js to your document. Then go through the same process with the output from the `marked` function.
 
 ```html
 <!-- index.html -->
