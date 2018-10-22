@@ -18,9 +18,11 @@
         "innerHTML"
     ],
     "scripts": {
-        "min": "uglifyjs src/index.js -m -o src/nodify-string.min.js"        
+        "min": "uglifyjs src/index.js -m -o src/nodify-string.min.js",
+        "test": "jest"
     },
     "devDependencies": {
+        "jest": "^23.6.0",
         "uglify-js": "^3.4.9"
     }
 }
