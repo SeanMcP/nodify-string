@@ -40,7 +40,7 @@ Add `nodify-string` to your list of scripts at the bottom of your HTML document.
     <script src="https://unpkg.com/nodify-string"></script>
     <script>
         const target = document.getElementById('output')
-        const greeting = `<h1>Hello world!</h1>`
+        const greeting = '<h1>Hello world!</h1>'
         nodifyString(greeting).forEach(node =>
             target.appendChild(node)
         )
@@ -61,7 +61,7 @@ Add both `nodify-string` and Marked.js to your document. Then go through the sam
     <script src="https://unpkg.com/nodify-string"></script>
     <script>
         const target = document.getElementById('output')
-        const greeting = `# Hello world`
+        const greeting = '# Hello world'
         const htmlString = marked(greeting)
         nodifyString(htmlString).forEach(node =>
             target.appendChild(node)
