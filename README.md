@@ -1,6 +1,8 @@
 # nodify-string
 
-A utility for converting HTML strings into DOM nodes without innerHTML.
+[![npm](https://img.shields.io/npm/v/nodify-string.svg)](https://npmjs.com/package/nodify-string) [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/nodify-string.svg)](https://npmjs.com/package/nodify-string) [![npm](https://img.shields.io/npm/dt/nodify-string.svg)](https://npmjs.com/package/nodify-string)
+
+👟 Convert HTML strings into DOM nodes without innerHTML
 
 ## Why?
 
