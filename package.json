@@ -16,5 +16,8 @@
         "html",
         "marked",
         "innerHTML"
-    ]
+    ],
+    "devDependencies": {
+        "uglify-js": "^3.4.9"
+    }
 }
