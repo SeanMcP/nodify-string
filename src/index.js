@@ -15,8 +15,12 @@ function nodifyString(htmlString, settings) {
     return nodes
 }
 
-try {
-    module.exports = nodifyString
-} catch (error) {
-    console.log('nodify-string imported')
+if (typeof module !== 'undefined' && typeof exports === 'object') {
+    module.exports = nodifyString;
+} else if (typeof define === 'function' && define.amd) {
+    define(function () {
+        return nodifyString;
+    });
+} else {
+    root.nodifyString = nodifyString;
 }

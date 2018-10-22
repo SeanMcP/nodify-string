@@ -17,6 +17,9 @@
         "marked",
         "innerHTML"
     ],
+    "scripts": {
+        "min": "uglifyjs src/index.js -m -o src/nodify-string.min.js"        
+    },
     "devDependencies": {
         "uglify-js": "^3.4.9"
     }
