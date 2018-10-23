@@ -19,6 +19,25 @@ function nodifyString(htmlString, settings) {
     }
 }
 
+// const nodifyStringJSX = (htmlString) => {
+//     const nodes = nodifyString(htmlString, {
+//         array: true
+//     })
+//     return nodes.map((node, i) => {
+//         console.log('node', node)
+//         console.log('node.tagName', node.tagName)
+//         if (node.tagName) {
+//             return (
+//                 React.createElement(
+//                     node.tagName.toLowerCase(), {
+//                         id: node.id.slice(0, node.id.length - 1)
+//                     },
+//                     node.textContent
+//                 ))
+//         }
+//     })
+// }
+
 if (typeof module !== 'undefined' && typeof exports === 'object') {
     module.exports = nodifyString;
 } else if (typeof define === 'function' && define.amd) {
