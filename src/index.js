@@ -25,6 +25,4 @@ if (typeof module !== 'undefined' && typeof exports === 'object') {
     define(function () {
         return nodifyString;
     });
-} else {
-    root.nodifyString = nodifyString;
 }
