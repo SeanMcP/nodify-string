@@ -37,6 +37,7 @@ function nodifyString(htmlString, settings) {
 //         }
 //     })
 // }
+// https://codesandbox.io/s/v3kq7ryx0l
 
 if (typeof module !== 'undefined' && typeof exports === 'object') {
     module.exports = nodifyString;
